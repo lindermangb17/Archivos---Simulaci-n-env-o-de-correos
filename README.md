@@ -1,2 +1,2 @@
-# Archivos---Simulaci-n-env-o-de-correos
+# Archivos--Simulacion-envio-de-correos
 Ejercicio Archivos - Simulación envío de correos Linderman Guerrero B
