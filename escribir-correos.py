@@ -8,7 +8,10 @@ with open(ruta+"mbox.txt", "r") as arch:
             emails.append(email)
 
 with open(ruta + "correos.txt", "w") as arch:
+    enviados=[]
     for i in range(len(emails)-1,-1,-1):
-        mensaje = emails[i] + " enviado [ok]\n"
-        print(mensaje)
-        arch.write(mensaje)
+        if emails[i] not in enviados:
+            mensaje = emails[i] + " enviado [ok]\n"
+            print(mensaje, end="")
+            arch.write(mensaje)
+            enviados.append(emails[i])
